@@ -10,14 +10,45 @@
             <hr>
         </title>
     </head>
+        <style>
+            #codeBlock
+            {
+                font-size: 24px;
+            }
+            .red
+            {
+                background: #FF0000;
+            }
+            .blue
+            {
+                background: #0000FF;
+            }
+            .green
+            {
+                background: #00FF00;
+            }
+            div
+            {
+                margin: 10px;
+                padding: 10px;
+                border: 2px solid purple;
+            }
+            span
+            {
+                margin: 10px;
+                padding: 10px;
+                border: 2px solid yellow;
+                
+            }
+        </style>
         <body>
-            <pre>console.log('hello world')</pre>
-            <div>This is block one</div>
-            <div>This is block two</div>
-            <div>This is block three</div>
-            <span>This is inline one</span>
-            <span>This is inline two</span>
-            <span>This is inline three</span>
+            <pre id="codeBlock">console.log('hello world')</pre>
+            <div class="red">This is block one</div>
+            <div class="blue">This is block two</div>
+            <div class="green">This is block three</div>
+            <span class="red">This is inline one</span>
+            <span class="blue">This is inline two</span>
+            <span class="green">This is inline three</span>
             <span>U+02267 U+00338</span>
             <span>U+02267 U+00338</span>
             <span>U+02275</span>
