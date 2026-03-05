@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lab: Centering, Psuedo selectors, Transform, Animations </title>
+        <style>
+            div
+            {
+                margin: 20px;
+                padding: 20px;
+                border: 1px solid purple;
+            }
+            div.left
+            {
+                text-align:left;
+            }
+            div.right
+            {
+                text-align:right;
+            }
+            div.center
+            {
+                text-align:center;
+            }
+            div.justify
+            {
+                text-align:justify;
+            }
+            div.margin-center
+            {
+                width:500px;
+                margin:0 auto;
+            }
+            div.outer
+            {
+                background: lightblue;
+                height:200px;
+                width:400px;
+                margin: 50px auto;
+                padding:20px;
+                border: 3px solid black;
+                position: relative;
+            }
+            div.inner
+            {
+                background: lightcoral;
+                height: 80px;
+                width: 150px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+            }
+            div.rotate
+            {
+                width:150px;
+                height: 100px;
+                background:purple;
+                transform:rotate(20deg);
+            }
+            div.scale-big
+            {
+                width: 150px;
+                height: 100px;
+                background: green;
+                transform:scale(1.5);
+            }
+            div.scale-small
+            {
+                width:150px;
+                height:100px;
+                background:red;
+                transform:scale(.5);
+            }
+            div.skew
+            {
+                width:150px;
+                height:100px;
+                background: gold;
+                transform:skew(20deg);
+            }
+            div.active-box
+            {
+                width: 200px;
+                height: 100px;
+                background-color: green;
+                transition: background-color 0.5s;
+            }
+            .active-box:active{
+                background-color:red;
+            }
+            div.hover-box
+            {
+                width:200px;
+                height:100px;
+                background-color:purple;
+                transition: background-color 0.5s;
+            }
+            .hover-box:hover
+            {
+                background-color:blue;
+            }
+            a:link
+            {
+                color:green;
+            }
+            a:visited
+            {
+                color:purple;
+            }
+            div.animated-box
+            {
+                width:200px;
+                height:100px;
+                background-color:orange;
+                margin:40px auto;
+                text-align:center;
+                line-height:100px;
+                animation: bounce 2s infinite;
+            }
+            @keyframes bounce
+            {
+                0%
+                {
+                    transform: translateY(0);
+                }
+                50%
+                {
+                    transform: translateY(-40px);
+                }
+                100%
+                {
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+        <body>
+            <!--First divs with lorem text:-->
+            <!--text align values-->
+            <div class="left">Lorem ipsum dolor sit amet</div>
+            <div class="right">Lorem ipsum dolor sit amet</div>
+            <div class="center">Lorem ipsum dolor sit amet</div>
+            <div class="justify">Lorem ipsum dolor sit amet</div>
+            <!--Centering with margin: 0 auto-->
+            <div class="margin-center">Lorem ipsum dolor sit ame</div>
+            <!--Center vertically and horizontally using translate-->
+            <div class="">Lorem ipsum dolor sit ame</div>
+            <!--Centering vertically and horizontally using translate-->
+            <div class="outer">
+            <div class="inner">
+            I should be given a color, height, width, top, transform. I should be centered horizontally and veritcally
+            </div>
+            </div>
+            <!--Uses Rotate-->
+            <div class="rotate">Lorem ipsum dolor sit ame</div>
+            <!--Uses scale to make something bigger-->
+            <div class="scale-big">Lorem ipsum dolor sit ame</div>
+            <!--Uses scale to make something smaller-->
+            <div class="scale-small">Lorem ipsum dolor sit ame</div>
+            <!--This div will be skewed-->
+            <div class="skew">This div will be skewed!</div>
+            <!--This div will activate on hover-->
+            <div class="active-box">Click and hold me!</div>
+            <!--This div will animate a color change on hover-->
+            <div class="hover-box">Hover the mouse over me!</div>
+            <!--This div will wrap text in one of the divs in an anchor tag-->
+            <div class="https://www.google.com"><a href="">Click here to go to google</a></div>
+            <!--This div is using a CSS animation-->
+            <div class="animated-box">This div will be animated!</div>
+
+        </body>
+</html>
