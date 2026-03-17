@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="desciption" content="">
+        <meta name="viewport" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <title></title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    
+        <body class = "p-24 bg-white-500">
+            <div class ="w-96 bg-stone-50 flex-col rounded-lg shadow-lg hover:scale-110 transistion-all">
+                <img class = "rounded-t-lg" src = "https://images.unsplash.com/photo-1773609108583-4f0040c75e7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D" alt="Tomales Point Trail, Inverness, CA" >
+                <div class = "flex flex-col gap-y-4 px-8 py-6 >
+                <h2 class="text-xl font-bold">The Coldest Sunset</h2>
+                <p>Lorem ipsum dolor sit amet, consecetetur adipiscing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+                <div class = "flex gap-x-4">
+                    <span class = "bg-sky-200 py-2 px-4 rounded-full hover:bg-sky-300 all cursor-pointer active:bg-indigo-300">#photography</span>
+                    <span class = "bg-sky-200 py-2 px-4 rounded-full hover:bg-sky-300 all cursor-pointer active:bg-inidgo-300">#travel</span>
+                    <span class = "bg-sky-200 py-2 px-4 rounded-full hover:bg-sky-300 all cursor-pointer active:bg-inidgo-300">#winter</span>
+                </div>
+                </div>
+            </div>
+        </body>
+</html>
